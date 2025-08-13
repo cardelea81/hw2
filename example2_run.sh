@@ -59,4 +59,735 @@ echo "1. Create ASM diskgroups for DATA and FRA"
 echo "2. Create Oracle RAC database using DBCA"
 echo "3. Configure services and listeners"
 echo ""
-echo "Summary file: /root/oracle_rac_installation_summary.txt" 
+echo "Summary file: /root/oracle_rac_installation_summary.txt"
+
+
+[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+pipelining = True
+control_path_dir = ~/.ansible/cp
+control_path = %(directory)s/%%h-%%r
